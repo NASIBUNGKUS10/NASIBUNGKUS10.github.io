@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Cars</title>
+</head>
+    
+</body>
+
+
+                <script type="text/javascript">
+                    let fileXml =""; // akan diisi oleh fileXml
+
+                    fetch('Cars.xml').then((response)=>{
+                        response.text().then((xml)=>{
+                             fileXml = xml;
+                            let parser = new DOMParser();
+                            let xmlDOM = parser.parseFromString(fileXml, 'application/xml');
+                            let books = xmlDOM.querySelectorAll(Cars);
+
+                            books.forEach(fileXmlnode => {
+                                let row document.createElemet\
+                            }
+                        })
+                    })
+                    
+                    </script>
+</html>
